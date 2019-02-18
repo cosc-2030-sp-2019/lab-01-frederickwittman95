@@ -1,0 +1,32 @@
+// Frederick Wittman
+// Robin K. Hill
+// COSC 2030-01
+// 04 February 2019
+
+1.  To comment C++ code:
+
+    Inserting "//" will identify everything after this symbol as a comment on a single line.  To add a block comment that can span
+    multiple lines, insert the desired comment between the asterisks of the "/* */" symbol.
+    
+2.  To comment Python code:
+
+    The "#" symbol is used to comment out a single line.  To identify a block of code as a comment, insert the code between three
+    double quotation marks, literally: """comment""".
+    
+3.  What kind of file has extension ".md"?
+
+    Markdown files have extension ".md".  Markdown languages control the styling of webpages and other computer interfaces using
+    plain text.  The primary example of a markdown language is HTML.
+    
+4.  How to strip whitespace from the end of a string in C++:
+    
+    One way to strip the whitespace from the end of a string in C++ is to use the algorithm provided by the pixel compressor file:
+    
+    #include <string>
+    string whitespace(" \t\f\v\n\r");  // Define whitespace characters
+    sampleString.substr(0, sampleString.find_last_not_of(whitespace));  // This returns a substring beginning at the zeroth element of 
+    sampleString and ending at the last character in sampleString that is not the parameter, which in this case is whitespace,
+    of the the find_last_not_of function.  Note that this function will not strip whitespace inside the string, but only whitespace
+    that trails the last character.
+
+    
